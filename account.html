@@ -1,0 +1,1204 @@
+<!DOCTYPE html>
+<html>
+<title>H.M. Financial</title> 
+ <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">  
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous"> 
+      <!-- Add icon library -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style> 
+.container {
+  width: 850px;
+  clear: both;
+}
+
+ body, html, a, p, span, ul, li, h1, h2 {
+  font-family: abril face; /* I have added Arial here. You can change to whatever you want */
+} 
+	.wrapper {
+    position: relative;
+    border-style:solid;
+    border-width: 0px;
+    
+}
+	
+	.centeredOverlay {
+		position: absolute;
+    display: none;
+    /*dim the background*/
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    color:black;
+    text-align: center;
+}
+
+.centeredOverlay span {
+    position: absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+}
+ 	
+body {
+  color: #000000;
+}
+
+	select {
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: #FFFFFF;
+  border: none;
+  border-bottom: 2px solid #FFFFFF;
+  color: #000000;
+  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type=text]{
+
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: #302e2e;
+  border: none;
+  border-bottom: 2px solid #2d8659;
+  color: #2d8659;
+  padding: 15px;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  
+
+  }
+
+button {
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0;
+  background-color: #2d8659;
+  border: none;
+  color: #000000;
+  padding: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+}
+
+td, th {
+  border: 1px solid #0000;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #f1f1f1;
+  color: #000000;
+} 
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+} 
+
+h# {
+  text-align: center;
+} 
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+body {
+  background-image: url('lol7.jpg');
+} 
+
+table, th, td {
+  border: 1px solid white;
+} 
+
+.container {
+  width: 850px;
+  clear: both; 
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} 
+ 
+</style>
+</head>
+</style> 
+   <body> 
+       <div class="w3-container w3-green"> 
+     <h1 style="text-shadow:1px 1px 0 #444" align="left"> &#x2655; H.M. Financial Union</h1>
+      </div> 
+    <div class="w3-bar w3-border w3-light-grey">
+   <a href="index.html" class="w3-bar-item w3-button w3-border-right">Logout</a>
+  <a onclick="accounts()" class="w3-bar-item w3-button w3-border-right">Accounts</a>
+   <a href="#" class="w3-bar-item w3-button w3-border-right">Disclaimer</a>
+    <a href="#" class="w3-bar-item w3-button w3-border-right">Contact</a>
+     </div>  
+	 
+	<div id="accountMenu" style="display: block;">
+
+		
+		<div class="wrapper">
+            <div class="centeredOverlay" style="display: none;">
+               
+            </div>
+			    
+			 
+			      
+<h1>............................................................. H.M. Financial Union ...............................................................</h1> 
+     <h2>Accounts:</h2>
+<table id="table">
+  <tbody><tr>
+    <td>TYPE</td>
+    <td>ACCOUNT ID</td>
+		<td>BALANCE</td> 
+		 <td>Transfer</td> 
+           		   
+		 <img src="phone.jpg" style="float:right" alt="img not available sorry" width="749" height="527"> 
+		   
+  </tr>
+  <tr>
+    <td>Personal Checking</td>
+    <td>****9173</td>
+		<td>$9,341.04</td>
+		<td><a onclick="transfer()" class="btn btn-success btn-lg" href="#">Transfer</a>
+  </tr>
+	  <tr>
+    <td>Online Checking</td>
+    <td>****0420</td>
+		<td>$6,942.00</td>
+			<td><a onclick="transfer()" class="btn btn-success btn-lg" href="#">Transfer</a>
+  </tr>
+    <tr>
+    <td>Online Savings</td>
+    <td>****6969</td>
+		<td>$21,241.28</td>
+	  <td><a onclick="transfer()" class="btn btn-success btn-lg" href="#">Transfer</a>
+  </tr>
+</tbody></table>
+		            
+			 
+			 
+		<br>
+		
+		<h2>Recent Transactions:</h2>
+
+		
+
+
+<table id="table2">
+  <tbody><tr>
+		<td>DATE</td>
+    <td>DESCRIPTION</td>
+    <td>ACCOUNT ID</td>
+		<td>AMOUNT</td>
+		<td>STATUS</td>
+  </tr>
+  <tr>
+    <td>07/26/2020</td>
+    <td>Netflix</td>
+		<td>****9173</td>
+		<td>-$8.00</td>
+		<td>Pending Receipt</td>
+  </tr>
+	  <tr>
+    <td>07/25/2020</td>
+    <td>eBay Purchase</td>
+		<td>****9173</td>
+		<td>-$32.49</td>
+		<td>Confirmed</td>
+  </tr>
+    <tr>
+    <td>07/25/2020</td>
+    <td>Bank Deposit</td>
+		<td>****6969</td>
+		<td>$110.00</td>
+	  <td>Confirmed</td>
+  </tr>
+		<tr>
+    <td>07/24/2020</td>
+    <td>Walmart Purchase</td>
+		<td>****9173</td>
+		<td>-$72.45</td>
+	  <td>Confirmed</td>
+  </tr>
+	<tr>
+    <td>07/24/2020</td>
+    <td>Paypal Withdrawl</td>
+		<td>****9173</td>
+		<td>$102.45</td>
+	  <td>Confirmed</td>
+  </tr>
+</tbody></table>
+<a class="btn btn-warning btn-lg" href="#">Contact Support</a>
+		</div> 
+		<div class="row">
+					
+					<div class="col">
+					
+
+						<div class="card">
+							<div class="card-body">
+								<h4 class="class-title">What's your Credit Score?</h4>
+								</p>Find out what your credit score is right now, seriousy it's really easy.</p>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+					
+					</div>
+					
+					<div class="col">
+					
+
+						<div class="card">
+							<div class="card-body">
+								<h4 class="class-title">Join AARP Rewards</h4>
+								</p>You could be saving serious coin on everyday purchases.
+								</p>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+					
+					</div>
+					
+					<div class="col">
+					
+
+						<div class="card">
+							<div class="card-body">
+								<h4 class="class-title">Record Low Interest Rates</h4>
+								</p>You're already approved. It takes just a moment to open an account</p>
+								<a href="#">Learn More</a>
+							</div>
+						</div>
+					
+					</div>
+					
+					
+					<div class="spacer"></div>
+					
+				
+		
+				</div>
+			</div>
+
+		
+		</div>
+	
+	<script>
+		
+				var today = new Date();
+		var yesterday = new Date(today)
+		var yesteryesterday = new Date(yesterday)
+yesterday.setDate(yesterday.getDate() - 1)
+yesteryesterday.setDate(yesteryesterday.getDate() - 2)
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+	var yyyy = today.getFullYear();
+
+	today = mm + '/' + dd + '/' + yyyy;
+		
+	dd = String(yesterday.getDate()).padStart(2, '0');
+	mm = String(yesterday.getMonth() + 1).padStart(2, '0'); //January is 0!
+	yyyy = yesterday.getFullYear();
+	
+		yesterday = mm + '/' + dd + '/' + yyyy;
+		
+		dd = String(yesteryesterday.getDate()).padStart(2, '0');
+	mm = String(yesteryesterday.getMonth() + 1).padStart(2, '0'); //January is 0!
+	yyyy = yesteryesterday.getFullYear();
+	
+		yesteryesterday = mm + '/' + dd + '/' + yyyy;
+		
+		
+		// Accounts
+					//__________________________
+		
+		var name1 = "Personal Checking"
+		var name2 = "Online Checking"
+		var name3 = "Online Savings"
+		
+		
+		if(getCookie("name1")=== ""||getCookie("name1") === "empty"){
+		name1 = "Personal Checking"
+		name2 = "Online Checking"
+		name3 = "Online Savings"
+		} else {
+		name1 = getCookie("name1")
+		name2 = getCookie("name2")
+		name3 = getCookie("name3")
+		}
+		
+		var balance1 = "9,341.04"
+		var balance2 = "6,942.00"
+		var balance3 = "23,241.28"
+		
+		if(getCookie("balance1")=== ""||getCookie("balance1") === "empty"){
+		 balance1 = "9,341.04"
+		balance2 = "6,942.00"
+		balance3 = "23,241.28"
+		} else {
+			balance1 = getCookie("balance1")
+			balance2 = getCookie("balance2")
+			balance3 = getCookie("balance3")
+		}
+		
+		var ids = ["****9173", "****0420", "****6969"]
+		
+		if(getCookie("ids")=== ""||getCookie("ids") === "empty"){
+
+		} else {
+			ids[0] = getCookie("ids").split(",")[0]
+			ids[1] = getCookie("ids").split(",")[1]
+			ids[2] = getCookie("ids").split(",")[2]
+		}
+		
+		var permanentCookies = "false"
+		
+		if(getCookie("permanentCookies")=== ""||getCookie("permanentCookies") === "empty"){
+		
+		} else {
+			permanentCookies = getCookie("permanentCookies")
+		}
+		
+		var expiration = ""
+		
+		
+			
+		// cookie management
+		setInterval(function(){
+			
+			if(getCookie("permanentCookies")=== "true"||getCookie("permanentCookies") === true){
+		var calculatedYear = yyyy + 900
+		expiration = "; expires=Thu, 31 Dec " + calculatedYear + " 12:00:00 UTC" 
+		} else if(getCookie("permanentCookies")=== "false"||getCookie("permanentCookies") === false) {
+			expiration = ""
+		}
+
+		document.cookie = "balance1=" + balance1 + expiration
+		document.cookie = "balance2=" + balance2 + expiration
+		document.cookie = "balance3=" + balance3 + expiration
+		
+		document.cookie = "name1=" + name1 + expiration
+		document.cookie = "name2=" + name2 + expiration
+		document.cookie = "name3=" + name3 + expiration
+		
+		document.cookie = "ids=" + ids + expiration
+		
+		document.cookie = "permanentCookies=" + permanentCookies + expiration
+
+		}, 1);
+
+	
+	function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+    var c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "empty";
+}
+		
+		// add info to table
+		//___________________________________________________________
+		
+		//BALANCES
+		
+		//table1
+		
+		setInterval(function(){
+	document.getElementById("table").rows[1].cells[2].innerHTML = "$" + balance1
+		
+	document.getElementById("table").rows[2].cells[2].innerHTML =  "$" +  balance2
+		
+		document.getElementById("table").rows[3].cells[2].innerHTML = "$" + balance3
+	
+		
+		
+		// IDs
+		
+	//table1
+		document.getElementById("table").rows[1].cells[1].innerHTML = ids[0]
+		
+	document.getElementById("table").rows[2].cells[1].innerHTML =  ids[1]
+		
+		document.getElementById("table").rows[3].cells[1].innerHTML = ids[2]
+		
+	
+		
+
+		
+		// IDs
+		
+	//table1
+		document.getElementById("table").rows[1].cells[0].innerHTML = name1
+		
+	document.getElementById("table").rows[2].cells[0].innerHTML =  name2
+		
+		document.getElementById("table").rows[3].cells[0].innerHTML = name3
+		
+		}, 500);
+		
+		//DATES
+		
+
+		
+		var transactionsArray = [today, "Netflix", "****9173", "-$8.00", "Pending Receipt", yesterday, "eBay Purchase", "****9173", "-$32.49", "Confirmed", yesterday, "Bank Deposit", "****6969", "$110.00", "Confirmed", yesteryesterday, "Walmart Purchase", "****0420", "-$72.45", "Confirmed", yesteryesterday, "Paypal Withdrawl", "****9173", "$102.45", "Confirmed"]
+		
+		if(getCookie("transactionsArray")=== ""||getCookie("transactionsArray") === "empty"){
+		document.cookie = "transactionsArray=" + transactionsArray
+		
+		} else {
+			transactionsArray = getCookie("transactionsArray").split(",");
+			
+		}
+			
+		// cookie management
+		setInterval(function(){
+
+		document.cookie = "transactionsArray=" + transactionsArray
+
+		}, 1);
+
+		// Loads data from transactionsArray
+		// ________________________________________
+		
+		// dates
+		
+		document.getElementById("table2").rows[1].cells[0].innerHTML = transactionsArray[0]
+		
+	document.getElementById("table2").rows[2].cells[0].innerHTML = transactionsArray[5]
+		
+		document.getElementById("table2").rows[3].cells[0].innerHTML = transactionsArray[10]
+
+		document.getElementById("table2").rows[4].cells[0].innerHTML = transactionsArray[15]
+		
+		document.getElementById("table2").rows[5].cells[0].innerHTML = transactionsArray[20]
+		
+		// Descriprions
+		
+		document.getElementById("table2").rows[1].cells[1].innerHTML = transactionsArray[1]
+		
+	document.getElementById("table2").rows[2].cells[1].innerHTML = transactionsArray[6]
+		
+		document.getElementById("table2").rows[3].cells[1].innerHTML = transactionsArray[11]
+
+		document.getElementById("table2").rows[4].cells[1].innerHTML = transactionsArray[16]
+		
+		document.getElementById("table2").rows[5].cells[1].innerHTML = transactionsArray[21]
+	
+		// IDs
+		
+
+		document.getElementById("table2").rows[1].cells[2].innerHTML = transactionsArray[2]
+		
+	document.getElementById("table2").rows[2].cells[2].innerHTML = transactionsArray[7]
+		
+		document.getElementById("table2").rows[3].cells[2].innerHTML = transactionsArray[12]
+
+		document.getElementById("table2").rows[4].cells[3].innerHTML = transactionsArray[17]
+		
+		document.getElementById("table2").rows[5].cells[3].innerHTML = transactionsArray[22]
+		
+		// Amounts
+		
+		document.getElementById("table2").rows[1].cells[3].innerHTML = transactionsArray[3]
+		
+	document.getElementById("table2").rows[2].cells[3].innerHTML = transactionsArray[8]
+		
+		document.getElementById("table2").rows[3].cells[3].innerHTML = transactionsArray[13]
+
+		document.getElementById("table2").rows[4].cells[3].innerHTML = transactionsArray[18]
+		
+		document.getElementById("table2").rows[5].cells[3].innerHTML = transactionsArray[23]
+
+		// Statuses. Status? Stati?
+		
+		document.getElementById("table2").rows[1].cells[4].innerHTML = transactionsArray[4]
+		
+	document.getElementById("table2").rows[2].cells[4].innerHTML = transactionsArray[9]
+		
+		document.getElementById("table2").rows[3].cells[4].innerHTML = transactionsArray[14]
+
+		document.getElementById("table2").rows[4].cells[4].innerHTML = transactionsArray[19]
+		
+		document.getElementById("table2").rows[5].cells[4].innerHTML = transactionsArray[24]
+		
+		
+	// Converts table2 (the recent transactions) into an array and saves them in the "transactionsArray" array and cookie	
+		
+	setInterval(function(){	
+		
+		var myTableArray = [];
+
+$("table#table2").each(function() {
+    var arrayOfThisRow = [];
+    var tableData = $(this).find('td');
+    if (tableData.length > 0) {
+        tableData.each(function() { arrayOfThisRow.push($(this).text()); });
+        myTableArray.push(arrayOfThisRow);
+    }
+});
+		
+		
+		
+		
+		myTableArray = myTableArray.flat(3);
+		myTableArray.shift();
+		myTableArray.shift();
+		myTableArray.shift();
+		myTableArray.shift();
+		myTableArray.shift();
+		transactionsArray = myTableArray;
+		
+		
+		transactionsArray = myTableArray
+		
+		document.cookie = "transactionsArray=" + myTableArray
+
+}, 10);
+		
+		//_________________________________________________________________________________________________
+		// TRANSFER MENU
+</script>
+	<div class="container">
+		<div id="transferMenu" style="display: none;"> 
+		<h1>.....Transfer....</h1>
+		
+			<br>
+<br> 
+<div class="container">
+
+<label for="from">Send From:</label>
+
+<select id="from" style=" font-weight: bold; font-size: 12px; background-color: #ffd500;">&gt;
+  <option value="1">****9173</option>
+  <option value="2">****0420</option>
+  <option value="3">****6969</option>
+</select>
+
+
+<label for="to">Send To:</label>
+
+<select id="to" style=" font-weight: bold; font-size: 12px; background-color: #ffd500;">&gt;
+  <option value="1">****9173</option>
+  <option value="2">****0420</option>
+  <option value="3">****6969</option>
+  <option value="other">Other</option>
+</select>   
+
+
+
+<p> <input type="text" id="specify" placeholder="Email or SMS Number" style="font-weight: bold; font-size: 12px; display: none;">
+
+
+<br>
+
+<input type="text" id="amount" placeholder="amount (USD)" size="9" style=" font-weight: bold; font-size: 12px;">
+
+<br>
+<br>
+<a onclick="verify()" class="btn btn-success btn-lg" href="#">Send Now</a> <a onclick="verify()" class="btn btn-success btn-lg" href="#">Send Later</a>
+
+</p><p id="verify" style="display: none;"> A verification code has been sent  to your phone. Please enter the verification code: <input type="text" size="4"> <button onclick="sent()" style=" font-weight: bold; font-size: 12px; background-color: #ffd500;">Go</button></p>
+
+<p id="text" style="display: none;"> Funds sent succesfully. <u onclick="reciept()"><font color="blue"> Reciept</font></u></p>
+
+</div>
+
+<div id="reciept" style="display: none;">
+	
+		<br>
+		
+	<table id="table3">
+  <tbody><tr>
+		<td>DATE</td>
+    <td>SENDER ID</td>
+		<td>RECIEVER ID</td>
+		<td>AMOUNT</td>
+		<td>TRANSCATION ID</td>
+  </tr>
+  <tr>
+    <td>today</td>
+    <td>actualSender</td>
+		<td>actualReciever</td>
+		<td>amount</td>
+		<td>transId</td>
+  
+</tr></tbody></table>
+		
+		</div>
+
+<script>
+	
+	document.getElementById("verify").style.display = "none";
+	
+	document.getElementById("text").style.display = "none";
+	
+	document.getElementById("specify").style.display = "none";
+	var e = document.getElementById("to");
+var strUser = e.options[e.selectedIndex].value;
+	
+var amount	
+
+var reciever
+
+var sender
+
+var actualReciever
+
+var actualSender
+	
+	setInterval(function(){
+  strUser = e.options[e.selectedIndex].value;
+		amount = parseInt(document.getElementById("amount").value, 10);
+		
+		if(amount === NaN){
+			amount = 0
+		}
+		
+		reciever = strUser
+	
+	var e2 = document.getElementById("from");
+	var strUser2 = e2.options[e2.selectedIndex].value;
+	
+	sender = strUser2
+	
+	var e3 = document.getElementById("to");
+var strUser3 = e3.options[e3.selectedIndex].text;
+		
+		actualReciever = strUser3
+		
+		if(actualReciever === "Other"){
+			actualReciever = document.getElementById("specify").value;
+		}
+		
+		var e4 = document.getElementById("from");
+var strUser4 = e4.options[e4.selectedIndex].text;
+		
+		actualSender = strUser4
+		
+		if(actualReciever === "Other"){
+			actualReciever = document.getElementById("specify").value;
+		}
+		
+	if(strUser === "other"){	document.getElementById("specify").style.display = "block";
+	}else{
+		document.getElementById("specify").style.display = "none";
+	}
+		
+		
+		// display correct ids
+		
+		document.getElementById("from").options[0].text = ids[0]
+		document.getElementById("from").options[1].text = ids[1]
+		document.getElementById("from").options[2].text = ids[2]
+		
+		document.getElementById("to").options[0].text = ids[0]
+		document.getElementById("to").options[1].text = ids[1]
+		document.getElementById("to").options[2].text = ids[2]
+		
+}, 100);
+	
+	//funds transmition calculation
+	
+	
+	
+	function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+	
+	var transId
+	
+	function sent(){
+		
+		
+		// hiding stuff
+		document.getElementById("verify").style.display = "none";
+		
+	document.getElementById("text").style.display = "block";
+		
+		// actual sending of funds
+		
+		switch(parseInt(sender, 10)) {
+  case 1:
+   balance1 = parseFloat(balance1.replace(",", ""),10) - amount
+	 
+	 balance1 = Math.ceil(balance1 * 100) / 100;
+	 
+	 balance1 = numberWithCommas(balance1)
+    break;
+  case 2:
+    balance2 = parseFloat(balance2.replace(",", ""),10) - amount
+	 
+		balance2 = Math.ceil(balance2 * 100) / 100;
+		
+	 balance2 = numberWithCommas(balance2)
+    break;
+	case 3:
+    balance3 = parseFloat(balance3.replace(",", ""),10) - amount
+	 
+		balance3 = Math.ceil(balance3 * 100) / 100;
+		
+	 balance3 = numberWithCommas(balance3)
+    break;		
+	}
+
+		document.getElementById("table2").deleteRow(5);
+		
+		var row = document.getElementById("table2").insertRow(1);
+
+// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var cell3 = row.insertCell(2);
+var cell4 = row.insertCell(3);
+var cell5 = row.insertCell(4);
+
+// Add some text to the new cells:
+cell1.innerHTML = today;
+cell2.innerHTML = "Transfer to " + actualReciever;
+cell3.innerHTML = actualSender;
+cell4.innerHTML = "-$" + numberWithCommas(amount);
+cell5.innerHTML = "Confirmed";
+		
+		
+				document.getElementById("table2").deleteRow(5);
+		
+		var row2 = document.getElementById("table2").insertRow(1);
+
+// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+var cell12 = row2.insertCell(0);
+var cell22 = row2.insertCell(1);
+var cell32 = row2.insertCell(2);
+var cell42 = row2.insertCell(3);
+var cell52 = row2.insertCell(4);
+
+// Add some text to the new cells:
+cell12.innerHTML = today;
+cell22.innerHTML = "Transfer from " + actualSender;
+cell32.innerHTML = actualReciever;
+cell42.innerHTML = "$" + numberWithCommas(amount);
+cell52.innerHTML = "Confirmed";
+		
+		
+		
+		if(reciever === "other"){}else{
+			switch(parseInt(reciever, 10)) {
+  case 1:
+   balance1 = parseFloat(balance1.replace(",", ""),10) + (amount )
+	 
+	 balance1 = Math.ceil(balance1 * 100) / 100;
+	 
+	 balance1 = numberWithCommas(balance1)
+    break;
+  case 2:
+    balance2 = parseFloat(balance2.replace(",", ""),10) + (amount )
+	 
+		balance2 = Math.ceil(balance2 * 100) / 100;
+		
+	 balance2 = numberWithCommas(balance2)
+    break;
+	case 3:
+    balance3 = parseFloat(balance3.replace(",", ""),10) + (amount )
+	 
+		balance3 = Math.ceil(balance3 * 100) / 100;
+		
+	 balance3 = numberWithCommas(balance3)
+    break;		
+	}
+		}
+		
+
+		
+		// reciept production
+		
+		
+		transId = Math.floor(Math.random() * (999999998 - 100000000) + 100000000)
+		
+		document.getElementById("table3").rows[1].cells[0].innerHTML = today
+		
+		document.getElementById("table3").rows[1].cells[1].innerHTML = actualSender
+		
+		document.getElementById("table3").rows[1].cells[2].innerHTML = actualReciever
+		
+		document.getElementById("table3").rows[1].cells[3].innerHTML = "$" + numberWithCommas(amount)
+		
+		document.getElementById("table3").rows[1].cells[4].innerHTML = transId
+	
+	}
+		
+	function verify(){
+		document.getElementById("verify").style.display = "block";
+	}
+	
+
+
+	</script>
+
+<span id="help" style="display: none;">
+	<br>
+	<h2>Account Settings</h2>
+	<ul>
+	<li>For the ID, don't enter a real ID. Do enter four asterisks followed by four numbers (for example "****9173").</li>
+		<li>For the amount, don't enter dollar sign. Do enter a number separated with commas (for example "1,000").</li>
+		<li>If any input box is left blank, its value willl stay the same.</li>
+	
+	<br>
+	<input type="text" placeholder="Account 1 Name" id="account1Name">
+	<input type="text" placeholder="Account 1 ID" id="account1ID">
+  <input type="text" placeholder="Account 1 Balance" id="account1Balance">
+
+	<br>
+	<br>
+	<input type="text" placeholder="Account 2 Name" id="account2Name">
+	<input type="text" placeholder="Account 2 ID" id="account2ID">
+  <input type="text" placeholder="Account 2 Balance" id="account2Balance">
+
+<br>
+<br>
+
+	<input type="text" placeholder="Account 3 Name" id="account3Name">
+	<input type="text" placeholder="Account 3 ID" id="account3ID">
+  <input type="text" placeholder="Account 3 Balance" id="account3Balance">
+
+</ul> <h2>Add Fake Transaction</h2><ul>
+	
+	<li>For the amount, make sure to add a "-$" at the beginning or a "$" (depending on whether it's a negative or positive amount)</li>
+	<li>The status should be either "confirmed", "pending reciept", or "cancelled"</li>
+	<li>Note that the table on the account page will only display the five most recent transactions.</li>
+	<br>
+<input type="text" placeholder="Date" id="newDate">
+<input type="text" placeholder="Description" id="newDesc">
+
+<br>
+<br>
+
+<input type="text" placeholder="Account ID" id="newID">
+<input type="text" placeholder="Amount" id="newAmount">
+
+<br>
+<br>
+
+<input type="text" placeholder="Status" id="newStatus">
+<button onclick="add()">Add</button>
+<br>
+</ul>
+
+<h2>Block Developers' Tools (Inspect Element)</h2>
+<ul>
+<input type="checkbox" id="addOverlay"> Add an overlay to make using inspect element more difficult (this can also be done by pressing Alt + O). Note that this feature is expirimental and so you will not be able to click on the "transfer" links while this is enabled.<br>
+<input type="checkbox" id="devTools"> Block right clicking and keyboard shortcuts that open developers' tools such as f12 (this can also be done by pressing Alt + B).
+</ul>
+
+<h2>Cookie Saving</h2>
+
+<ul>
+	<li>This site saves the fake bank IDs and transactions in your cookies so that when this page is opened again, your fake account will look the same as before.</li>
+	<li>We will not use cookies to get your personal information, or whatever corrupt companies do with them. If you wish, you can block cookies on our site to disactivate this feature.</li>
+	<li>You can reset the bank by removing, but not blocking, all cookies on our site.</li>
+	<input type="checkbox" id="permanentCookies"> Make cookies permanent. While not selected, the cookies will automatically be deleted after the browser is closed. While selected, they will become permanent and will only be removed if you <a href="https://www.beacontechnologies.com/blog/2012/10/clearing-cookies-from-just-one-site.aspx">clear the cookies set on this site</a>  or if you uncheck this box and restart your browser.
+</ul>
+
+	<h2>Session Expiration</h2>
+
+<ul>
+	<li>Make the scammer really have a hard time. Press Alt + S to make your session expire and make you log in again.</li>
+	
+
+</ul>
+	
+<br>
+
+	</span>
+	
+	<script> // Help menu
+					//_________________________________________________________________
+		
+// Account Settings
+		
+		setInterval(function(){
+	
+	//1
+	
+
+	if(document.getElementById("account1Name").value=== ""){}else{
+	name1 = document.getElementById("account1Name").value
+}
+	
+if(document.getElementById("account1Balance").value=== ""){}else{
+	balance1 = document.getElementById("account1Balance").value
+}
+	
+	if(document.getElementById("account1ID").value=== ""){}else{
+	ids[0] = document.getElementById("account1ID").value
+}
+	
+	//2
+			
+if(document.getElementById("account2Name").value=== ""){}else{
+	name2 = document.getElementById("account2Name").value
+}
+
+	
+if(document.getElementById("account2Balance").value=== ""){}else{
+	balance2 = document.getElementById("account2Balance").value
+}
+	
+	if(document.getElementById("account2ID").value=== ""){}else{
+	ids[1] = document.getElementById("account2ID").value
+}
+
+	//3
+	if(document.getElementById("account3Name").value=== ""){}else{
+	name3 = document.getElementById("account3Name").value
+}
+			
+	if(document.getElementById("account3Balance").value=== ""){}else{
+	balance3 = document.getElementById("account3Balance").value
+}
+	
+	if(document.getElementById("account3ID").value=== ""){}else{
+	ids[2] = document.getElementById("account3ID").value
+}
+	
+}, 100);
+		
+		// New Transactions
+		
+		
+		function add(){
+			
+			// Find a <table> element with id="table2":
+var table = document.getElementById("table2");
+
+// Create an empty <tr> element and add it to the 1st position of the table:
+var row = table.insertRow(1);
+
+// Insert new cells (<td> elements) at the 1st and 2nd position of the "new" <tr> element:
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var cell3 = row.insertCell(2);
+var cell4 = row.insertCell(3);
+var cell5 = row.insertCell(4);
+
+// Add some text to the new cells:
+cell1.innerHTML = document.getElementById("newDate").value;
+cell2.innerHTML = document.getElementById("newDesc").value;
+cell3.innerHTML = document.getElementById("newID").value;
+cell4.innerHTML = document.getElementById("newAmount").value;
+cell5.innerHTML = document.getElementById("newStatus").value;
+					document.getElementById("table2").deleteRow(document.getElementById("table2").rows.length - 1);
+			
+			alert("Success. Transaction added.")
+		}
+		
+	</script>
+	
+	
+	<script>// Links
+					//_________________________________________________________________
+		
+		document.getElementById("accountMenu").style.display = "block";
+			document.getElementById("transferMenu").style.display = "none";
+			document.getElementById("reciept").style.display = "none";
+		document.getElementById("help").style.display = "none";
+		
+		
+		function accounts(){
+			
+						document.getElementById("reciept").style.display = "none";
+			document.getElementById("accountMenu").style.display = "block";
+			document.getElementById("transferMenu").style.display = "none";
+			document.getElementById("help").style.display = "none";
+		}
+		
+		function transfer(){
+		
+				document.getElementById("reciept").style.display = "none";		
+			document.getElementById("accountMenu").style.display = "none";
+			document.getElementById("help").style.display = "none";
+			document.getElementById("transferMenu").style.display = "block";
+		}
+		
+		function reciept(){
+			
+	document.getElementById("reciept").style.display = "block";
+			document.getElementById("transferMenu").style.display = "none";
+			document.getElementById("help").style.display = "none";
+			window.print()
+		}
+		
+			function help(){
+		document.getElementById("accountMenu").style.display = "none";
+			document.getElementById("transferMenu").style.display = "none";
+			document.getElementById("reciept").style.display = "none";
+		document.getElementById("help").style.display = "block";
+	}
+	</script>
+	
+<script>
+	
+
+	// block inspect element
+	
+	
+function disableclick(event)
+{
+  if(event.button==2)
+   {
+     alert("Right clicking is disabled for security purposes.");
+     return false;    
+   }
+}
+	
+	// check or uncheck depending on value of permanentCookies
+	
+	if(permanentCookies === true || permanentCookies === "true"){
+
+	document.getElementById("permanentCookies").checked = true
+
+} else {
+	document.getElementById("permanentCookies").checked = false
+
+}
+
+	
+onload = function() {
+
+setInterval(function() {
+	
+	// permanent cookies
+	
+	permanentCookies = document.getElementById("permanentCookies").checked
+	
+	
+	// overlay
+	
+if(document.getElementById("addOverlay").checked === true){
+
+	$(".centeredOverlay").css("display", "block");
+
+} else {
+	$(".centeredOverlay").css("display", "none");
+
+}
+	
+if(document.getElementById("devTools").checked === true){
+	// for right-click
+			document.onmousedown=disableclick;
+	
+	// for ctrl key
+	
+	$(document).keydown(function(event){
+    if(event.keyCode==123){
+        return false;
+    }
+    else if (event.ctrlKey && event.shiftKey && event.keyCode==73){        
+             return false;
+    }
+});
+
+}
+	
+	if(document.getElementById("devTools").checked === false){
+		document.onmousedown=true
+	}
+	
+	}, 1);
+	
+  };
+	
+
+
+  document.addEventListener('keydown',function(e){
+
+  //ALT + something
+  if(e.altKey){
+    switch(e.code){
+
+      case 'KeyS':
+        alert('Your session has expired. Click "OK" to log back in.');
+				window.location.href = "index.html";
+        break;
+				
+      case 'KeyB':
+				if(document.getElementById("devTools").checked){
+        document.getElementById("devTools").checked = false
+				} else {
+					document.getElementById("devTools").checked = true
+				}
+        break;
+				
+				case 'KeyO':
+				if(document.getElementById("addOverlay").checked){
+        document.getElementById("addOverlay").checked = false
+				} else {
+					document.getElementById("addOverlay").checked = true
+				}
+        break;
+				
+    }
+  }
+
+});
+		
+</script> 
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="/script.js"></script> 
+	 
+  
+  
+ </body>
+</html>
