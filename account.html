@@ -69,13 +69,13 @@ input[type=text]{
   font-weight: bold;
   cursor: pointer;
   border-radius: 0;
-  background-color: #302e2e;
+  background-color: #000000;
   border: none;
   border-bottom: 2px solid #2d8659;
   color: #2d8659;
-  padding: 15px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
 
   
 
@@ -89,8 +89,8 @@ button {
   border: none;
   color: #000000;
   padding: 5px;
-  padding-right: 5px;
-  padding-left: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
 
   
 }
@@ -609,15 +609,16 @@ $("table#table2").each(function() {
 </script>
 	<div class="container">
 		<div id="transferMenu" style="display: none;"> 
-		<h1>.....Transfer....</h1>
+		<h1><h1>_______ Transfer ______</h1></h1>
 		
 			<br>
 <br> 
-<div class="container">
+<h4>Select paye account number or sortcode</h4> 
+        <p>____________________________________________________</p>
 
 <label for="from">Send From:</label>
 
-<select id="from" style=" font-weight: bold; font-size: 12px; background-color: #ffd500;">&gt;
+<select id="from" style=" font-weight: bold; font-size: 12px; background-color: #FFFFFF;">&gt;
   <option value="1">*****9173</option>
   <option value="2">*****0420</option>
   <option value="3">*****6969</option>
@@ -626,7 +627,7 @@ $("table#table2").each(function() {
 
 <label for="to">Send To:</label>
 
-<select id="to" style=" font-weight: bold; font-size: 12px; background-color: #ffd500;">&gt;
+<select id="to" style=" font-weight: bold; font-size: 12px; background-color: #FFFFFF;">&gt;
   <option value="1">*****9173</option>
   <option value="2">*****0420</option>
   <option value="3">*****6969</option>
@@ -635,7 +636,7 @@ $("table#table2").each(function() {
 
 
 
-<p> <input type="text" id="specify" placeholder="Email or SMS Number" style="font-weight: bold; font-size: 12px; display: none;">
+<p> <input type="text" id="specify" placeholder="Account number or sortcode" style="font-weight: bold; font-size: 12px; display: none;">
 
 
 <br>
@@ -644,7 +645,7 @@ $("table#table2").each(function() {
 
 <br>
 <br>
-<a onclick="verify()" class="btn btn-success btn-lg" href="#">Send Now</a> <a onclick="verify()" class="btn btn-success btn-lg" href="#">Send Later</a>
+<a onclick="verify()" class="btn btn-success btn-lg" href="#">Send Now</a> <a onclick="verify()" class="btn btn-danger btn-lg" href="#">Contact Support</a> <a onclick="verify()" class="btn btn-success btn-lg" href="#">Send Later</a>
 
 </p><p id="verify" style="display: none;"> A verification code has been sent  to your phone. Please enter the verification code: <input type="text" size="4"> <button onclick="sent()" style=" font-weight: bold; font-size: 12px; background-color: #ffd500;">Go</button></p>
 
