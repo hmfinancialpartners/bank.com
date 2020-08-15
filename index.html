@@ -174,15 +174,7 @@ body {font-family: Arial, Helvetica, sans-serif;}
     <i class="fa fa-key icon"></i>
     <input class="input-field" type="password" placeholder="Password" name="psw">
   </div> 
-  <% if (Boolean.TRUE.equals(request.getAttribute("success"))) { %>
-         <div class='status-message'>Thanks for the feedback!</div>
-       <% } else if (Boolean.FALSE.equals(request.getAttribute("success"))) { %>
-         <div class='status-message'>There was an error.</div>
-       <% }%>
-    <form id='demo-form' action='/feedback' method='POST'>
-      Your comment <br><textarea name='feedback' cols='50' rows='5'></textarea><br>
-      <!-- Replace this with your site key -->
-     <button class="g-recaptcha"
+ 
        data-sitekey="6Ldd_74ZAAAAADmoHBEdWXg1dMWsXOqk9Z-WCoPE"
        data-callback="onSubmit">Submit</button>
 </form>  
