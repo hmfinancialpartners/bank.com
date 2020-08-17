@@ -94,25 +94,30 @@ button {
 }
 
 table {
-  font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 50%;
+  width: 100%;
 }
 
-td, th {
-  border: 1px solid #f1f1f1;
-  text-align: left;
+th, td {
   padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}   
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: 1px solid white;
+  width: 50%;
 }
 
 tr:nth-child(even) {
   background-color: #f1f1f1;
-  color: #000000;
-} 
+  color: #000000; 
+}
 
 tr:nth-child(odd) {
   background-color: #f1f1f1;
-  color: #000000;
+  color: #000000; 
 } 
 .alert {
   padding: 20px;
@@ -148,10 +153,6 @@ body {
   background-image: url('#.jpg');
 } 
 
-table, th, td {
-  border: 1px solid white;
-} 
-
 .container {
   width: 850px;
   clear: both; 
@@ -171,7 +172,7 @@ table, th, td {
 
 h2 {
   text-align: center;
-}
+} 
 
 </style>
 </head>
@@ -202,9 +203,7 @@ h2 {
 
  <hr /> 
      <div class="w3-container">
-     <h5 style="color:green;">Accounts:</h5> 
- <hr />    
- 
+     <h5 style="color:green;">Accounts:</h5>
 <table style="float: left;" id="table">
   <tbody><tr>
     <td>TYPE</td>
